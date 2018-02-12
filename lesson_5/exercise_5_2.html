@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <script>
+        function runTest()
+        {
+          document.getElementById("info").innerHTML = "Explicit Wait Test has been run";
+          document.title = "Explicit Wait";
+          document.getElementById("instruction").innerHTML = "Press F5 to restart this page";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="about">About Me</h2>
+    <ul id="list">
+        <li id="name" class="important">Name: John Doe</li>
+        <li id="phone" class="important">Phone: 400-6790</span></li>
+        <li id="hometown" class="important">Hometown: Springfield</span></li>
+    </ul>
+    <p id="info">This is an Explicit Wait Test</p>
+    <p id="instruction">Click on the button to start the test</p>
+
+    <button id="runTestButton" type="button" onclick="runTest()">Run test</button>
+</body>
+</html>
